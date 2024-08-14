@@ -1,0 +1,345 @@
+---------REGRESSION RESULT 1---------
+Cluster: None
+
+Raw Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                 4149
+Model:                            GLM   Df Residuals:                     4140
+Model Family:                Binomial   Df Model:                            8
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -2486.6
+Date:                Thu, 20 Apr 2023   Deviance:                       4973.1
+Time:                        12:59:20   Pearson chi2:                 4.14e+03
+No. Iterations:                     5   Pseudo R-squ. (CS):            0.02414
+Covariance Type:            nonrobust
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -0.8672      0.035    -25.053      0.000      -0.935      -0.799
+danceability        -0.1882      0.044     -4.301      0.000      -0.274      -0.102
+energy               0.0837      0.053      1.584      0.113      -0.020       0.187
+loudness            -0.2133      0.049     -4.328      0.000      -0.310      -0.117
+speechiness         -0.0893      0.044     -2.043      0.041      -0.175      -0.004
+acousticness         0.0298      0.044      0.679      0.497      -0.056       0.116
+instrumentalness    -0.0700      0.050     -1.395      0.163      -0.168       0.028
+valence             -0.0592      0.040     -1.478      0.139      -0.138       0.019
+tempo               -0.0150      0.040     -0.372      0.710      -0.094       0.064
+====================================================================================
+Raw Data Accuracy: 0.6987225837551218
+
+PCA Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                 4149
+Model:                            GLM   Df Residuals:                     4143
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -2492.5
+Date:                Thu, 20 Apr 2023   Deviance:                       4984.9
+Time:                        12:59:20   Pearson chi2:                 4.12e+03
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.02137
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -0.8635      0.034    -25.036      0.000      -0.931      -0.796
+PC1           -0.1836      0.022     -8.464      0.000      -0.226      -0.141
+PC2            0.0572      0.027      2.093      0.036       0.004       0.111
+PC3           -0.0992      0.037     -2.679      0.007      -0.172      -0.027
+PC4            0.0494      0.042      1.167      0.243      -0.034       0.132
+PC5            0.0050      0.043      0.116      0.908      -0.079       0.089
+==============================================================================
+PCA Data Accuracy: 0.6992046276211136
+
+
+---------REGRESSION RESULT 2---------
+Cluster: 
+ahmedabad
+guwahati
+jaipur
+kolkata
+lucknow
+mumbai
+patna
+pune
+
+Raw Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                 2080
+Model:                            GLM   Df Residuals:                     2071
+Model Family:                Binomial   Df Model:                            8
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1136.8
+Date:                Thu, 20 Apr 2023   Deviance:                       2273.5
+Time:                        12:59:47   Pearson chi2:                 2.54e+03
+No. Iterations:                     7   Pseudo R-squ. (CS):             0.1207
+Covariance Type:            nonrobust
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -1.0392      0.060    -17.429      0.000      -1.156      -0.922
+danceability        -0.0092      0.088     -0.105      0.917      -0.181       0.163
+energy              -0.0615      0.101     -0.611      0.541      -0.259       0.136
+loudness            -0.4504      0.091     -4.973      0.000      -0.628      -0.273
+speechiness         -0.8070      0.127     -6.348      0.000      -1.056      -0.558
+acousticness        -0.1578      0.079     -2.007      0.045      -0.312      -0.004
+instrumentalness    -0.2462      0.154     -1.600      0.110      -0.548       0.055
+valence             -0.4578      0.074     -6.149      0.000      -0.604      -0.312
+tempo               -0.1381      0.070     -1.963      0.050      -0.276      -0.000
+====================================================================================
+Raw Data Accuracy: 0.7201923076923077
+
+PCA Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                 2080
+Model:                            GLM   Df Residuals:                     2074
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -1168.8
+Date:                Thu, 20 Apr 2023   Deviance:                       2337.6
+Time:                        12:59:47   Pearson chi2:                 2.31e+03
+No. Iterations:                     8   Pseudo R-squ. (CS):            0.09323
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -1.2097      0.088    -13.770      0.000      -1.382      -1.038
+PC1           -0.7146      0.083     -8.645      0.000      -0.877      -0.553
+PC2           -0.4929      0.125     -3.928      0.000      -0.739      -0.247
+PC3           -0.9650      0.223     -4.326      0.000      -1.402      -0.528
+PC4           -2.0582      0.462     -4.454      0.000      -2.964      -1.152
+PC5            0.0084      0.071      0.118      0.906      -0.131       0.147
+==============================================================================
+PCA Data Accuracy: 0.6490384615384616
+
+
+---------REGRESSION RESULT 3---------
+Cluster:
+bengaluru
+hyderabad
+imphal
+
+Raw Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  769
+Model:                            GLM   Df Residuals:                      760
+Model Family:                Binomial   Df Model:                            8
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -459.18
+Date:                Thu, 20 Apr 2023   Deviance:                       918.36
+Time:                        13:00:12   Pearson chi2:                     765.
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.03409
+Covariance Type:            nonrobust
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -0.8616      0.081    -10.643      0.000      -1.020      -0.703
+danceability        -0.0064      0.102     -0.063      0.950      -0.206       0.193
+energy              -0.3540      0.130     -2.713      0.007      -0.610      -0.098
+loudness            -0.0320      0.112     -0.285      0.776      -0.252       0.188
+speechiness          0.1992      0.099      2.017      0.044       0.006       0.393
+acousticness         0.0713      0.099      0.723      0.470      -0.122       0.265
+instrumentalness    -0.0145      0.110     -0.132      0.895      -0.230       0.201
+valence             -0.0290      0.093     -0.311      0.756      -0.212       0.154
+tempo               -0.1986      0.084     -2.362      0.018      -0.363      -0.034
+====================================================================================
+Raw Data Accuracy: 0.6931079323797139
+
+PCA Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  769
+Model:                            GLM   Df Residuals:                      763
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -462.30
+Date:                Thu, 20 Apr 2023   Deviance:                       924.60
+Time:                        13:00:13   Pearson chi2:                     770.
+No. Iterations:                     5   Pseudo R-squ. (CS):            0.02622
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -0.8539      0.080    -10.609      0.000      -1.012      -0.696
+PC1           -0.1726      0.052     -3.308      0.001      -0.275      -0.070
+PC2           -0.0065      0.076     -0.085      0.932      -0.155       0.142
+PC3           -0.2023      0.081     -2.501      0.012      -0.361      -0.044
+PC4           -0.0681      0.105     -0.650      0.516      -0.273       0.137
+PC5            0.1021      0.106      0.961      0.337      -0.106       0.310
+==============================================================================
+PCA Data Accuracy: 0.6879063719115734
+
+
+---------REGRESSION RESULT 4---------
+Cluster:
+delhi
+kochi
+
+Raw Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  520
+Model:                            GLM   Df Residuals:                      511
+Model Family:                Binomial   Df Model:                            8
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -306.69
+Date:                Thu, 20 Apr 2023   Deviance:                       613.37
+Time:                        13:00:34   Pearson chi2:                     516.
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.04129
+Covariance Type:            nonrobust
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -0.8980      0.100     -8.938      0.000      -1.095      -0.701
+danceability         0.3651      0.144      2.539      0.011       0.083       0.647
+energy               0.0711      0.166      0.428      0.668      -0.254       0.396
+loudness             0.0024      0.176      0.013      0.989      -0.343       0.348
+speechiness         -0.4630      0.150     -3.089      0.002      -0.757      -0.169
+acousticness         0.1555      0.136      1.147      0.252      -0.110       0.421
+instrumentalness    -0.1332      0.109     -1.228      0.220      -0.346       0.079
+valence              0.0343      0.132      0.259      0.795      -0.225       0.293
+tempo                0.3502      0.144      2.427      0.015       0.067       0.633
+====================================================================================
+Raw Data Accuracy: 0.698076923076923
+
+PCA Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  520
+Model:                            GLM   Df Residuals:                      514
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -312.25
+Date:                Thu, 20 Apr 2023   Deviance:                       624.49
+Time:                        13:00:34   Pearson chi2:                     519.
+No. Iterations:                     4   Pseudo R-squ. (CS):            0.02057
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -0.8661      0.097     -8.897      0.000      -1.057      -0.675
+PC1           -0.0103      0.059     -0.174      0.862      -0.127       0.106
+PC2            0.0322      0.079      0.409      0.682      -0.122       0.186
+PC3            0.0894      0.090      0.997      0.319      -0.086       0.265
+PC4           -0.0787      0.100     -0.789      0.430      -0.274       0.117
+PC5            0.3884      0.131      2.973      0.003       0.132       0.645
+==============================================================================
+PCA Data Accuracy: 0.698076923076923
+
+
+---------REGRESSION RESULT 5---------
+Cluster:
+chennai
+
+Raw Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  260
+Model:                            GLM   Df Residuals:                      251
+Model Family:                Binomial   Df Model:                            8
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -119.69
+Date:                Thu, 20 Apr 2023   Deviance:                       239.38
+Time:                        13:00:55   Pearson chi2:                     255.
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.2599
+Covariance Type:            nonrobust
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -1.2402      0.192     -6.471      0.000      -1.616      -0.865
+danceability        -0.5697      0.185     -3.072      0.002      -0.933      -0.206
+energy               1.4700      0.287      5.115      0.000       0.907       2.033
+loudness            -0.8184      0.284     -2.881      0.004      -1.375      -0.262
+speechiness         -0.3042      0.249     -1.220      0.222      -0.793       0.184
+acousticness        -0.4247      0.226     -1.881      0.060      -0.867       0.018
+instrumentalness    -0.0992      0.167     -0.593      0.554      -0.427       0.229
+valence              0.8754      0.293      2.983      0.003       0.300       1.451
+tempo                0.2079      0.222      0.935      0.350      -0.228       0.644
+====================================================================================
+Raw Data Accuracy: 0.7576923076923077
+
+PCA Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  260
+Model:                            GLM   Df Residuals:                      254
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -128.16
+Date:                Thu, 20 Apr 2023   Deviance:                       256.33
+Time:                        13:00:55   Pearson chi2:                     260.
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.2101
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -1.0902      0.169     -6.468      0.000      -1.421      -0.760
+PC1            0.4466      0.103      4.334      0.000       0.245       0.649
+PC2            0.3764      0.118      3.186      0.001       0.145       0.608
+PC3            0.5541      0.139      3.992      0.000       0.282       0.826
+PC4            0.3785      0.146      2.601      0.009       0.093       0.664
+PC5           -0.3647      0.189     -1.934      0.053      -0.734       0.005
+==============================================================================
+PCA Data Accuracy: 0.7538461538461538
+
+
+---------REGRESSION RESULT 6---------
+Cluster:
+chandigarh
+ludhiana
+
+Raw Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  520
+Model:                            GLM   Df Residuals:                      511
+Model Family:                Binomial   Df Model:                            8
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -270.41
+Date:                Thu, 20 Apr 2023   Deviance:                       540.83
+Time:                        13:01:13   Pearson chi2:                     526.
+No. Iterations:                     5   Pseudo R-squ. (CS):             0.1661
+Covariance Type:            nonrobust
+====================================================================================
+                       coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------------
+Intercept           -1.0295      0.113     -9.091      0.000      -1.251      -0.808
+danceability        -0.3489      0.142     -2.462      0.014      -0.627      -0.071
+energy               1.1220      0.184      6.108      0.000       0.762       1.482
+loudness            -0.2679      0.151     -1.779      0.075      -0.563       0.027
+speechiness         -0.4040      0.141     -2.864      0.004      -0.680      -0.128
+acousticness         0.0516      0.150      0.345      0.730      -0.242       0.345
+instrumentalness     0.3000      0.139      2.160      0.031       0.028       0.572
+valence             -0.5472      0.152     -3.608      0.000      -0.844      -0.250
+tempo                0.3625      0.124      2.925      0.003       0.120       0.605
+====================================================================================
+Raw Data Accuracy: 0.7269230769230769
+
+PCA Data Result
+                 Generalized Linear Model Regression Results
+==============================================================================
+Dep. Variable:                success   No. Observations:                  520
+Model:                            GLM   Df Residuals:                      514
+Model Family:                Binomial   Df Model:                            5
+Link Function:                  Logit   Scale:                          1.0000
+Method:                          IRLS   Log-Likelihood:                -284.39
+Date:                Thu, 20 Apr 2023   Deviance:                       568.79
+Time:                        13:01:13   Pearson chi2:                     533.
+No. Iterations:                     4   Pseudo R-squ. (CS):             0.1201
+Covariance Type:            nonrobust
+==============================================================================
+                 coef    std err          z      P>|z|      [0.025      0.975]
+------------------------------------------------------------------------------
+Intercept     -0.9490      0.106     -8.994      0.000      -1.156      -0.742
+PC1            0.2486      0.070      3.537      0.000       0.111       0.386
+PC2           -0.1425      0.079     -1.793      0.073      -0.298       0.013
+PC3           -0.2022      0.082     -2.456      0.014      -0.364      -0.041
+PC4            0.4908      0.119      4.142      0.000       0.259       0.723
+PC5           -0.6483      0.145     -4.485      0.000      -0.932      -0.365
+==============================================================================
+PCA Data Accuracy: 0.7
+
